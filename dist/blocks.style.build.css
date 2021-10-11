@@ -1,0 +1,671 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.simple-cards {
+  margin: 0 -20px 53px -20px; }
+  .simple-cards__row {
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 767.98px) {
+      .simple-cards__row {
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+  .simple-cards__column {
+    -ms-flex: 1 1 50%;
+        flex: 1 1 50%;
+    padding: 0 10px; }
+    @media (max-width: 767.98px) {
+      .simple-cards__column {
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%; }
+        .simple-cards__column:not(:last-child) {
+          margin-bottom: 20px; } }
+
+.link-card {
+  display: block;
+  border: 1px solid #396594;
+  border-radius: 10px;
+  padding: 20px 24px;
+  color: #2d3748;
+  text-decoration: none;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .link-card:hover {
+    color: #396594; }
+  .link-card__title {
+    font-weight: 700;
+    font-size: calc( 22px + ( (24 - 22) * 0.01 * ((100vw - 320px) / (1440 - 320) * 100) ));
+    line-height: 133.33333%;
+    margin-bottom: 22px; }
+  .link-card__description {
+    margin-bottom: calc( 41px + ( (54 - 41) * 0.01 * ((100vw - 320px) / (1440 - 320) * 100) ));
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+  .link-card__read-more {
+    color: #3182ce;
+    font-weight: 600;
+    text-align: right; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.img-cards {
+  margin: 0 -10px 25px -10px;
+  overflow: auto; }
+  .img-cards__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media (max-width: 479.98px) {
+      .img-cards__row {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+  .img-cards__column {
+    padding: 0 10px;
+    -ms-flex: 1 1 33.333%;
+        flex: 1 1 33.333%; }
+    @media (max-width: 767.98px) {
+      .img-cards__column {
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+        .img-cards__column:not(:last-child) {
+          margin-bottom: 20px; } }
+    @media (max-width: 479.98px) {
+      .img-cards__column {
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%; } }
+
+.link-card-img {
+  display: block;
+  color: #2d3748;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  text-decoration: none;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .link-card-img__body {
+    padding: 15px 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+  .link-card-img__picture {
+    position: relative;
+    padding: 0 0 68% 0; }
+    .link-card-img__picture img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .link-card-img__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 12px; }
+  .link-card-img__description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+  .link-card-img__read-more img {
+    float: right; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.hosting-info {
+  border-radius: 10px;
+  border: 1px solid #396594;
+  padding: 25px 30px;
+  margin-bottom: calc( 40px + ( (45 - 40) * 0.01 * ((100vw - 320px) / (1440 - 320) * 100) )); }
+  .hosting-info__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: inherit;
+    margin-bottom: 20px; }
+  .hosting-info__row {
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 767.98px) {
+      .hosting-info__row {
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+  .hosting-info__side {
+    margin-right: 40px;
+    -ms-flex: 0 0 190px;
+        flex: 0 0 190px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    @media (max-width: 767.98px) {
+      .hosting-info__side {
+        -ms-flex-align: center;
+            align-items: center; } }
+  .hosting-info__picture {
+    max-width: 190px;
+    margin-bottom: calc( 26px + ( (15 - 26) * 0.01 * ((100vw - 320px) / (1440 - 320) * 100) )); }
+    .hosting-info__picture img {
+      width: 100%; }
+  @media (max-width: 767.98px) {
+    .hosting-info__rating {
+      margin-bottom: 40px; } }
+  .hosting-info__body {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto; }
+  .hosting-info__link {
+    font-weight: 700;
+    text-decoration: none; }
+    .hosting-info__link:hover {
+      color: #276eb1; }
+
+.host-rating__title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #797976;
+  margin-bottom: 10px; }
+  @media (max-width: 767.98px) {
+    .host-rating__title {
+      text-align: center; } }
+
+.host-rating__icon {
+  margin-right: 10px; }
+
+.host-rating__value {
+  font-size: 30px;
+  line-height: 40px;
+  color: #3182ce;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 10px; }
+  @media (max-width: 767.98px) {
+    .host-rating__value {
+      -ms-flex-pack: center;
+          justify-content: center; } }
+
+.host-rating span {
+  font-size: 20px;
+  line-height: 27px;
+  color: #797976; }
+
+.hosting-table {
+  margin-bottom: 40px;
+  font-size: calc( 16px + ( (18 - 16) * 0.01 * ((100vw - 320px) / (1440 - 320) * 100) ));
+  line-height: 150%; }
+  .hosting-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 !important; }
+  .hosting-table tr:not(:last-child) {
+    border-bottom: 1px solid #c4c4c4; }
+  .hosting-table tr td {
+    padding: 11px 0; }
+  .hosting-table tr td:first-child {
+    color: #797976; }
+  .hosting-table tr td:last-child {
+    padding-left: 15px; }
+
+.buttons-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .buttons-group__internal {
+    margin-right: 32px; }
+    @media (max-width: 479.98px) {
+      .buttons-group__internal {
+        margin-bottom: 29px;
+        margin-right: 0; } }
+  @media (max-width: 479.98px) {
+    .buttons-group {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
+
+.internal-btn {
+  display: block;
+  text-decoration: none;
+  font-weight: 600; }
+  .internal-btn:hover {
+    color: #276eb1; }
+
+.external-btn {
+  display: block;
+  padding: 10px 13px;
+  background-color: #3182ce;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  text-decoration: none; }
+  .external-btn:hover {
+    color: #fff;
+    background-color: #276eb1; }
+@charset "UTF-8";
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.pros-cons {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 -20px 30px -20px; }
+  .pros-cons__row {
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 767.98px) {
+      .pros-cons__row {
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+  .pros-cons__pros {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%; }
+  .pros-cons__title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 31px;
+    margin-bottom: 20px; }
+  .pros-cons__cons {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%; }
+
+.pros {
+  padding: 0 20px; }
+  @media (max-width: 767.98px) {
+    .pros {
+      margin-bottom: 25px; } }
+  .pros__title {
+    color: #57d89f;
+    position: relative; }
+    .pros__title::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #d4ebf4; }
+    .pros__title::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 60%;
+      height: 3px;
+      background-color: #57d89f; }
+  .pros__items {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important; }
+  .pros__item {
+    padding: 5px 0;
+    display: table; }
+    .pros__item::before {
+      content: "+ ";
+      color: #57d89f;
+      font-size: 25px;
+      line-height: 33px;
+      font-weight: 600;
+      display: table-cell;
+      padding-right: 10px; }
+
+.cons {
+  padding: 0 20px; }
+  .cons__title {
+    color: #797976;
+    position: relative; }
+    .cons__title::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #ececec; }
+    .cons__title::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 60%;
+      height: 3px;
+      background-color: #797976; }
+  .cons__items {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important; }
+  .cons__item {
+    padding: 5px 0;
+    display: table; }
+    .cons__item::before {
+      content: "– ";
+      color: #797976;
+      font-size: 25px;
+      line-height: 33px;
+      font-weight: 600;
+      display: table-cell;
+      padding-right: 10px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.tags-cloud__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.single-tag {
+  display: block;
+  border: 1px solid #6998c7;
+  border-radius: 0.25rem;
+  padding: 0.4em 0.6em;
+  color: #2d3748;
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  margin-bottom: 20px; }
+  .single-tag:not(:last-child) {
+    margin-right: 15px; }
+  .single-tag:hover {
+    background-color: #3182ce;
+    color: #fff; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.contents-table {
+  margin-bottom: 40px; }
+  .contents-table__title {
+    font-weight: 600;
+    margin-bottom: 16px; }
+  .contents-table__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .contents-table__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    -ms-flex-align: center;
+        align-items: center;
+    outline: 1px solid #e1e1e1;
+    padding: 23px 38px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .contents-table__item:not(:last-child) {
+      margin-right: 1px; }
+    .contents-table__item span {
+      color: #22619c;
+      font-weight: 600; }
+    .contents-table__item:hover {
+      background-color: #005fb9;
+      border-color: #005fb9; }
+      .contents-table__item:hover span {
+        color: #fff; }
+    .contents-table__item:focus {
+      outline: 1px solid #e1e1e1 !important; }
+    .contents-table__item:active {
+      outline: 1px solid #e1e1e1; }
+    @media (max-width: 842px) {
+      .contents-table__item {
+        -ms-flex: 0 0 calc(50% - 2px);
+            flex: 0 0 calc(50% - 2px);
+        margin-bottom: 1px; } }
+    @media (max-width: 479.98px) {
+      .contents-table__item {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        margin-right: 0px;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+  .contents-table__icon {
+    margin-right: 10px; }
+    @media (max-width: 479.98px) {
+      .contents-table__icon {
+        -ms-flex-order: 2;
+            order: 2; } }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.reviews-dashboard {
+  border: 1px solid #396594;
+  border-radius: 5px;
+  padding: 35px 0px;
+  margin-bottom: calc( 30px + ( (60 - 30) * 0.01 * ((100vw - 320px) / (1440 - 320) * 100) )); }
+  .reviews-dashboard__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media (max-width: 842px) {
+      .reviews-dashboard__row {
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+  .reviews-dashboard__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+    padding: 0 5px 0 25px; }
+    @media (max-width: 842px) {
+      .reviews-dashboard__title {
+        margin-bottom: 20px;
+        text-align: center; } }
+  .reviews-dashboard__grade {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0 5px; }
+    @media (max-width: 842px) {
+      .reviews-dashboard__grade {
+        margin-bottom: 20px; } }
+  .reviews-dashboard__scale {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #b5b4b2;
+    white-space: nowrap; }
+  .reviews-dashboard__icon {
+    margin-right: 17px; }
+  .reviews-dashboard__info {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    padding: 0 25px 0 5px; }
+  .reviews-dashboard__count {
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 600; }
+    .reviews-dashboard__count span {
+      font-weight: 700; }
+  .reviews-dashboard .tt_rating_average {
+    display: block;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 67px;
+    white-space: nowrap; }
+  .reviews-dashboard .tt_rating_box_average {
+    display: block; }
+  .reviews-dashboard .tt_big_star_box {
+    padding: 0 !important; }
+  .reviews-dashboard .tt_rating-star {
+    font-size: 26px; }
+  @media (max-width: 842px) {
+    .reviews-dashboard {
+      padding: 20px 15px; } }
+
+.reviews-text fieldset {
+  border: none !important;
+  padding: 0 !important; }
+
+.reviews-text fieldset:hover {
+  background: none !important;
+  border: none !important; }
+
+.reviews-text .ttshowcase_rl_box {
+  margin-top: 40px;
+  width: 100%; }
+  .reviews-text .ttshowcase_rl_box:first-child {
+    margin-top: 0; }
+
+.reviews-text .ttshowcase_rl_quote {
+  border: 1px solid #d7d8da;
+  border-radius: 10px;
+  padding: 14px 26px !important;
+  text-align: left; }
+  .reviews-text .ttshowcase_rl_quote::after {
+    border: 1px solid #d7d8da !important; }
+
+.reviews-text .ttshowcase_rl_info_wrap {
+  margin-top: 10px; }
+  .reviews-text .ttshowcase_rl_info_wrap .ttshowcase_rl_aditional_info {
+    display: -ms-flexbox;
+    display: flex; }
+  .reviews-text .ttshowcase_rl_info_wrap .ttshowcase_rl_title {
+    margin-right: 10px;
+    padding-left: 26px; }
+
+.reviews-text .ttshowcase_form_wrap {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 15px 35px 25px 35px; }
+
+.reviews-text #ttshowcase_form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.reviews-text .tt_rating_fieldset {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  margin-bottom: 20px; }
+  .reviews-text .tt_rating_fieldset .tt_rating {
+    margin-left: 12px; }
+    .reviews-text .tt_rating_fieldset .tt_rating input {
+      display: none; }
+
+.reviews-text .tt_testimonial_fieldset {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%; }
+  .reviews-text .tt_testimonial_fieldset > textarea {
+    width: 100%;
+    border-radius: 10px; }
+
+.reviews-text .tt_title_fieldset {
+  margin: 0px 20px 15px 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  -ms-flex-negative: 1px;
+      flex-shrink: 1px;
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px); }
+  @media (max-width: 550px) {
+    .reviews-text .tt_title_fieldset {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin: 15px 0 0 0; } }
+  .reviews-text .tt_title_fieldset > input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px; }
+
+.reviews-text .tt_email_fieldset {
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  -ms-flex-negative: 1px;
+      flex-shrink: 1px;
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+  margin: 0px 0 15px 0; }
+  @media (max-width: 550px) {
+    .reviews-text .tt_email_fieldset {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; } }
+  .reviews-text .tt_email_fieldset > input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px; }
+
+.reviews-text .tt_boolean_fieldset {
+  -ms-flex: 0 1 100%;
+      flex: 0 1 100%; }
+  .reviews-text .tt_boolean_fieldset input {
+    width: 45px !important; }
+  .reviews-text .tt_boolean_fieldset label {
+    margin-right: 25px; }
+
+.reviews-text .tt_form_button {
+  border: none;
+  cursor: pointer;
+  background-color: #bfe14d;
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 2px rgba(191, 225, 77, 0.15);
+          box-shadow: 0px 2px 2px rgba(191, 225, 77, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .reviews-text .tt_form_button:hover {
+    background-color: #9dc221;
+    -webkit-box-shadow: 0px 2px 2px rgba(191, 225, 77, 0.15);
+            box-shadow: 0px 2px 2px rgba(191, 225, 77, 0.15); }

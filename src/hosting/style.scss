@@ -1,0 +1,156 @@
+.hosting-info {
+	border-radius: 10px;
+	border: 1px solid #396594;
+	//box-shadow: 0px 7px 14px rgba(57, 101, 148, 0.5);
+	padding: 25px 30px;
+	@include adaptive-value("margin-bottom", 40, 45);
+
+	&__title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 40px;
+		color: inherit;
+		margin-bottom: 20px;
+	}
+
+	&__row {
+		display: flex;
+		@media (max-width: $md2 + px) {
+			flex-direction: column;
+		}
+	}
+
+	&__side {
+		margin-right: 40px;
+		flex: 0 0 190px;
+		display: flex;
+		flex-direction: column;
+		@media (max-width: $md2 + px) {
+			align-items: center;
+		}
+	}
+
+	&__picture {
+		max-width: 190px;
+		@include adaptive-value("margin-bottom", 26, 15) img {
+			width: 100%;
+		}
+	}
+
+	&__rating {
+		@media (max-width: $md2 + px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__body {
+		flex: 1 1 auto;
+	}
+
+	&__table {
+	}
+
+	&__btns {
+	}
+	&__link {
+		font-weight: 700;
+		text-decoration: none;
+		&:hover {
+			color: #276eb1;
+		}
+	}
+}
+.host-rating {
+	&__title {
+		font-size: 18px;
+		line-height: 24px;
+		color: #797976;
+		margin-bottom: 10px;
+		@media (max-width: $md2 + px) {
+			text-align: center;
+		}
+	}
+
+	&__icon {
+		margin-right: 10px;
+	}
+
+	&__value {
+		font-size: 30px;
+		line-height: 40px;
+		color: $link;
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+		@media (max-width: $md2 + px) {
+			justify-content: center;
+		}
+	}
+
+	span {
+		font-size: 20px;
+		line-height: 27px;
+		color: #797976;
+	}
+}
+.hosting-table {
+	margin-bottom: 40px;
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 0 !important;
+	}
+
+	@include font-size(16, 18, 27);
+	tr:not(:last-child) {
+		border-bottom: 1px solid #c4c4c4;
+	}
+	tr td {
+		padding: 11px 0;
+	}
+	tr td:first-child {
+		color: #797976;
+	}
+	tr td:last-child {
+		padding-left: 15px;
+	}
+}
+.buttons-group {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	&__internal {
+		margin-right: 32px;
+		@media (max-width: $md3 + px) {
+			margin-bottom: 29px;
+			margin-right: 0;
+		}
+	}
+
+	&__external {
+	}
+	@media (max-width: $md3 + px) {
+		flex-direction: column;
+	}
+}
+.internal-btn {
+	display: block;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover {
+		color: #276eb1;
+	}
+}
+.external-btn {
+	display: block;
+	padding: 10px 13px;
+	background-color: $link;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 5px;
+	text-decoration: none;
+	&:hover {
+		color: #fff;
+		background-color: #276eb1;
+	}
+}

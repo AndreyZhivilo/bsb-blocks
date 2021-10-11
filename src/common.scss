@@ -1,0 +1,48 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+// Colors.
+
+$font: #2d3748;
+$link: #3182ce;
+
+$black: #2d3748;
+$white: #f4f4f4;
+$gray: #dedede;
+$green: #bada55;
+$red: orangered;
+
+$maxWidthContainer: 842;
+$md1: $maxWidthContainer + 12;
+// $md2: 991.98;
+$md2: 767.98;
+$md3: 479.98;
+$minWidth: 320;
+$maxWidth: 1440;
+
+//Миксины
+
+@mixin font-size($min_font, $max_font, $max_line_heigth) {
+	font-size: calc(
+		#{$min_font}px +
+			(
+				(#{$max_font} - #{$min_font}) * 0.01 *
+					((100vw - #{$minWidth}px) / (#{$maxWidth} - #{$minWidth}) * 100)
+			)
+	);
+	line-height: $max_line_heigth / $max_font * 100%;
+}
+
+@mixin adaptive-value($prop, $min_value, $max_value) {
+	#{$prop}: calc(
+		#{$min_value}px +
+			(
+				(#{$max_value} - #{$min_value}) * 0.01 *
+					((100vw - #{$minWidth}px) / (#{$maxWidth} - #{$minWidth}) * 100)
+			)
+	);
+}

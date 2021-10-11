@@ -1,0 +1,26 @@
+.tags-cloud {
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__tag {
+	}
+}
+.single-tag {
+	display: block;
+	border: 1px solid rgb(105, 152, 199);
+	border-radius: 0.25rem;
+	padding: 0.4em 0.6em;
+	color: $font;
+	text-decoration: none;
+	transition: all 0.1s linear;
+	margin-bottom: 20px;
+	&:not(:last-child) {
+		margin-right: 15px;
+	}
+	&:hover {
+		background-color: $link;
+		color: #fff;
+	}
+}
